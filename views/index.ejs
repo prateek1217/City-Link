@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live Bus Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove Leaflet CSS references -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Add Google Maps script with your API key -->
+    <!-- Replace YOUR_API_KEY with your actual key -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjpF7Hzf0L-oSnZP00mmEBAvZxpoEG54c"
+    ></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Remove Leaflet JS reference -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <!-- Socket.io -->
+    <script
+      src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+      integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Your main JS file -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
