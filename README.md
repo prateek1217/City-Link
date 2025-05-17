@@ -3,10 +3,18 @@
 City‑Link is a full‑stack application that delivers live city‑bus tracking, ETA prediction, schedule management, ticketing and parcel bookings in one place.
 The driver shares location once; the backend keeps broadcasting updates via WebSockets while the frontend renders them on Google Maps in real time.
 
+
+![image](https://github.com/user-attachments/assets/584703f9-62ec-4b27-bd16-bdf4cdc28339)
+
+
 Scales in the wild: City‑Link already serves 1 000 + concurrent real‑time users without breaking a sweat!
 
 ✨ Features
 Live Tracking – see moving buses on an interactive map
+
+![image](https://github.com/user-attachments/assets/f6fd62d7-bcba-437a-a310-622b6118544a)
+
+
 
 Shortest‑Route & ETA – computes nearest bus to the user and predicts arrival time/delay
 
@@ -21,6 +29,10 @@ Driver‑Friendly – driver shares location once; system handles the rest
 Battle‑Tested Scale – proven to handle 1 k+ simultaneous users and dozens of buses
 
 Scalable Micro Split – separate backend (Node + Socket.io) and frontend (React + Vite)
+
+
+![image](https://github.com/user-attachments/assets/428c6188-9508-4be4-918c-e0eb92c3b8b5)
+
 
 🗂️ Folder Structure
 
