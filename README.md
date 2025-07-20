@@ -7,7 +7,7 @@ The driver shares location once; the backend keeps broadcasting updates via WebS
 ![image](https://github.com/user-attachments/assets/584703f9-62ec-4b27-bd16-bdf4cdc28339)
 
 
-Scales in the wild: City‑Link already serves 1 000 + concurrent real‑time users without breaking a sweat!
+
 
 ✨ Features
 Live Tracking – see moving buses on an interactive map
@@ -26,9 +26,7 @@ Socket‑Driven Updates – low‑latency location streaming with automatic reco
 
 Driver‑Friendly – driver shares location once; system handles the rest
 
-Battle‑Tested Scale – proven to handle 1 k+ simultaneous users and dozens of buses
 
-Scalable Micro Split – separate backend (Node + Socket.io) and frontend (React + Vite)
 
 
 ![image](https://github.com/user-attachments/assets/428c6188-9508-4be4-918c-e0eb92c3b8b5)
@@ -58,9 +56,8 @@ city-link/
 Layer	Technology
 Frontend	React 18, Vite, Socket.io‑client, Google Maps JS API
 Backend	Node.js, Express, Socket.io, REST, JWT auth
-Realtime DB*	Redis / in‑memory store for transient coords
-Persistent DB	MongoDB / PostgreSQL (choose one)
-Dev Tools	ESLint, Prettier, Husky, dotenv
+Persistent DB	MongoDB 
+
 
 ⚙️ Getting Started
 1. Clone & Install
@@ -82,15 +79,15 @@ npm run dev                         # Vite defaults to http://localhost:5173
 
 
 
-2. Expose Driver Socket (optional)
-If buses connect from outside your network, forward the backend socket port (default 4000) using ngrok or a cloud load‑balancer:
+2. Expose Driver Socket 
+If buses connect from outside the network, forward the backend socket port (default 4000) using ngrok or a cloud load‑balancer:
 
 ngrok http 4000
 
 
 Update CLIENT_SOCKET_URL in city-link-frontend/.env with the HTTPS ngrok URL.
 
-3. Seed Demo Data (optional)
+3. Seed Demo Data 
 bash
 # inside backend
 npm run seed
